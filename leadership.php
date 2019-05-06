@@ -157,41 +157,35 @@
                   <label>Notes Skill Tidak Sesuai</label>
                   <input type="text" class="form-control" name="skilltidaksesuainotes" placeholder="Masukkan catatan bila perlu">
                 </div>  
+
                 <div class="form-group">
-                  <label>Menurutmu apa arti pemimpin itu? Apakah yang seharusnya dilakukan seorang pemimpin? </label>
-                  <div class="radio">
-                      <label><input type="radio" required name="artipemimpin" value="1" >Menyatukan tim dan membiarkan anggota bekerja sesuai bidangnya dan pemimpin menunggu hasil dari pekerjaan anggota. Tanpa ikut turun tangan.<br></label>
+                    <label>Sebutkan 3 kriteria yang harus dimiliki seorang pemimpin</label>
+                    <label>BAGIAN INI TIDAK DIBACAKAN -> Nilai : mengayomi/merangkul, mempunyai visi, bertanggung jawab, dapat mengambil keputusan, pengendalian diri</label>
+                    <div class="radio">
+                      <label><input type="radio" required name="leaderkriteria" value="1" >menyebutkan 1 dari 5 nilai<br></label>
                     </div>
                     <div class="radio">
-                      <label><input type="radio" name="artipemimpin" value="2">Memberikan pekerjaan kepada anggota yang lain dan sedikit membantu.<br></label>
+                      <label><input type="radio" name="leaderkriteria" value="2">menyebutkan 2 dari 5 nilai<br></label>
                     </div>
-                    <div class="radio">
-                      <label><input type="radio" name="artipemimpin" value="3">Mampu memimpin diri sendiri dan kelompok, memikirkan konsep , membagi tugas dengan baik <br></label>
+				          	<div class="radio">
+                      <label><input type="radio" name="leaderkriteria" value="3">menyebutkan 3 dari 5 nilai <br></label>
                     </div>
-					<div class="radio">
-                      <label><input type="radio" name="artipemimpin" value="4">
-                      Mampu memimpin diri sendiri dan kelompok, memikirkan konsep, membagi tugas dengan baik, dan berkorban lebih banyak<br>
-                      </label>
-                    </div>
-					<div class="radio">
-                      <label><input type="radio" name="artipemimpin" value="5">Mampu memimpin diri sendiri dan kelompok, memikirkan konsep, membagi tugas dengan baik, berkorban lebih banyak, dan berani menerima segala resiko yang ada, mau turun tangan membantu <br></label>
-                    </div>
-                
-                </div>  
-				    <div class="form-group">
-                  <label>Notes Arti Pemimpin</label>
-                  <input type="text" class="form-control" name="artipemimpinnotes" placeholder="Masukkan catatan bila perlu">
                 </div>  
                 <div class="form-group">
-                  <label>Apa yang kamu lakukan jika kamu melakukan suatu kesalahan yang besar dalam kepanitiaan ini?</label>
+                  <label>notes kriteria pemimpin</label>
+                  <input type="text" class="form-control" name="leaderkriterianotes" placeholder="Masukkan catatan bila perlu">
+                </div>  
+
+                <div class="form-group">
+                  <label>Semisal suatu saat, kamu melakukan kesalahan yang fatal sehingga membuat semua anak satu sie mu memarahi bahkan mungkin membencimu, apa yang akan kamu lakukan?</label>
                   <div class="radio">
-                      <label><input type="radio" required name="kesalahanbesar" value="1" >Saya akan menyerah. Tidak tahu harus berbuat apa karena sudah berbuat salah <br></label>
+                      <label><input type="radio" required name="kesalahanbesar" value="1" >Terpaksa saya harus mundur<br></label>
                     </div>
                     <div class="radio">
-                      <label><input type="radio" name="kesalahanbesar" value="3">Meminta maaf, berusaha tidak mengulanginya, dan menjaga endurance<br></label>
+                      <label><input type="radio" name="kesalahanbesar" value="3">Yang penting saya minta maaf, dan melakukan tugas saya<br></label>
                     </div>
 					<div class="radio">
-                      <label><input type="radio" name="kesalahanbesar" value="5">Meminta maaf, berusaha tidak mengulangi dan memberikan solusi permasalahan<br></label>
+                      <label><input type="radio" name="kesalahanbesar" value="5">Saya akan meminta maaf dan berjuang mengembalikan kepercayaan mereka<br></label>
                     </div>
                     
                 </div> 
@@ -212,7 +206,23 @@
                   <input type="text" class="form-control" name="memilihorangnotes" placeholder="Masukkan catatan bila perlu">
                 </div>
                 </div>
-				
+
+                <div class="form-group">
+                  <label>Jika suatu saat, ternyata pemimpinmu tidak melakukan tugasnya dengan baik sehingga mengakibatkan banyak staff yang ogah-ogahan, apa yang kamu lakukan untuk mengatasi itu?</label>
+                  <div class="radio">
+                      <label><input type="radio" required name="pemimpinhilang" value="5" >Tetap semangat, dan membantu mencari teman yang hilang<br></label>
+                    </div>
+                    <div class="radio">
+                      <label><input type="radio" name="pemimpinhilang" value="3">Yang penting tugas saya selesai<br></label>
+                    </div>
+                    <div class="radio">
+                      <label><input type="radio" name="pemimpinhilang" value="1">Saya tidak tahu, tidak berani handle<br></label>
+                    </div>
+                    <div class="form-group">
+                  <label>Notes Pemimpin Hilang</label>
+                  <input type="text" class="form-control" name="pemimpinhilangnotes" placeholder="Masukkan catatan bila perlu">
+                </div>
+                </div>
              
 			  
                

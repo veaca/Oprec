@@ -150,7 +150,7 @@
                   <input type="text" class="form-control" name="urutanprioritasnotes" placeholder="Masukkan catatan tentang priortias Applicant">
                 </div>  
                 <div class="form-group">
-                  <label>Apa itu komitmen?</label>
+                  <label>Perbedaan janji dengan komitmen?</label>
                   <div class="radio">
                       <label><input type="radio" required name="artikomitmen" value="3" >Lebih tinggi dari janji<br></label>
                     </div>
@@ -182,43 +182,51 @@
                   <label>Notes Ekspektasi Kepanitiaan</label>
                   <input type="text" class="form-control" name="ekspektasinotes" placeholder="Masukkan catatan bila perlu">
                 </div>
+
                 <div class="form-group">
                   <label>Jika kamu ditempatkan di tempat yang bukan sie pilihan. Bagaimana pendapatmu?</label>
                   <div class="radio">
-                      <label><input type="radio" required name="bukansiepilihan" value="3" >Saya akan bertahan (Jika alasan dikarenakan ini merupakan sebuah pelayanan)<br></label>
-                    </div>
-                    <div class="radio">
-                      <label><input type="radio" name="bukansiepilihan" value="2">Saya akan bertahan (Jika alasan dikarenakan solusi lain) <br></label>
-                    </div>
-                    <div class="radio">
-                      <label><input type="radio" name="bukansiepilihan" value="1">Saya akan bertahan daripada tidak ada kegiatan lain (Daripada gabut)<br></label>
-                    </div>
-					<div class="radio">
-                      <label><input type="radio" name="bukansiepilihan" value="0">Saya tidak akan bertahan <br></label>
-                    </div>
-					
-					<div class="form-group">
-                  <label>Notes Ditempatkan Sie Lain</label>
-                  <input type="text" class="form-control" name="bukansiepilihannotes" placeholder="Masukkan catatan bila perlu">
-                </div>
-				
-                </div>
-				
-				<div class="form-group">
-                  <label>Ketika tidak diterima di panitia, apakah mau terlibat dalam pelayanan di PMKBK/NAPAS?</label>
+                    <label><input type="radio" required name="bukansiepilihan" value="3" >Saya akan bertahan (Jika alasan dikarenakan ini merupakan sebuah pelayanan)<br></label>
+                  </div>
                   <div class="radio">
-                      <label><input type="radio" required name="terlibatpelayanan" value="Ya" >Ya bersedia<br></label>
-                    </div>
-                    <div class="radio">
-                      <label><input type="radio" name="terlibatpelayanan" value="Ragu"> Masih belum tahu. Tidak tahu<br></label>
-                    </div>
-                    <div class="radio">
-                      <label><input type="radio" name="terlibatpelayanan" value="Tidak">Tidak .<br></label>
-                    </div>
-				<div class="form-group">
-                  <label>Notes Pelayanan di PKMBK/NAPAS</label>
-                  <input type="text" class="form-control" name="terlibatpelayanannotes" placeholder="Tulis pelayanan bidang apa yang diminati . Contoh : WL, pemusik, tamborin">
+                    <label><input type="radio" name="bukansiepilihan" value="2">Saya akan bertahan (Jika alasan dikarenakan solusi lain) <br></label>
+                  </div>
+                  <div class="radio">
+                    <label><input type="radio" name="bukansiepilihan" value="1">Saya akan bertahan daripada tidak ada kegiatan lain (Daripada gabut)<br></label>
+                  </div>
+					        <div class="radio">
+                    <label><input type="radio" name="bukansiepilihan" value="0">Saya tidak akan bertahan <br></label>
+                  </div>
+					
+                  <div class="form-group">
+                    <label>Notes Ditempatkan Sie Lain</label>
+                    <input type="text" class="form-control" name="bukansiepilihannotes" placeholder="Masukkan catatan bila perlu">
+                  </div>
                 </div>
+
+                <div class="form-group">
+                  <label>Semisal suatu saat, dalam satu sie banyak anak yang undur dalam tugasnya dan kondisinya hanya kamu yang dianggap berkomitmen, sehingga berdampak pada pembebanan tugas yang seharusnya bukan tugasmu, bagaimana responmu? Dan kenapa kamu melakukan itu?</label>
+                  <div class="radio">
+                    <label><input type="radio" required name="relakorban" value="3" >Saya berusaha membantu mencari mereka yang undur sambil mem-backup tugas mereka, karena saya lakukan untuk Tuhan<br></label>
+                  </div>
+                  <div class="radio">
+                    <label><input type="radio" name="relakorban" value="2">Saya lihat-lihat dulu ya, kalau tidak sibuk saya bantu, kalau sibuk ya terpaksa tidak <br></label>
+                  </div>
+                  <div class="radio">
+                    <label><input type="radio" name="relakorban" value="1">Saya sepertinya tidak bisa melakukannya karena banyak sekali urusan saya lain misalnya, bla bla bla<br></label>
+                  </div>
+					
+                  <div class="form-group">
+                    <label>Rela berkorban notes</label>
+                    <input type="text" class="form-control" name="relakorbannotes" placeholder="Masukkan catatan bila perlu">
+                  </div>
+                </div>
+
+
+				
+                
+				
+			
              
 			 <div class="form-group">
                   <label>Akankah ingin mengikuti SBMPTN /Tes ujian masuk ke kampus lain?</label>
@@ -231,6 +239,10 @@
                     <div class="radio">
                       <label><input type="radio" name="teskampus" value="Tidak">Tidak.<br></label>
                     </div>
+
+                    
+
+
 				<div class="form-group">
                   <label>Notes Tes SBMPTN/ Tes ujian masuk Kampus lain.</label>
                   <input type="text" class="form-control" name="teskampusnotes" placeholder="Tulis informasi tambahan ">
@@ -239,10 +251,7 @@
                 <label>Jika kamu sedang low motivation di dalam pelayanan ini, apakah yang harus dilakukan untuk menambah motivasimu? Baik dari dirimu sendiri atau orang lain</label>
                 <input type="text" class="form-control" name="saranlowmotivation" placeholder="Isikan jawaban applicant">
                 </div>
-                <div class="form-group">
-                <label>Jika kamu tidak diterima di ketiga sie yang kamu inginkan, apakah kamu bersedia untuk ditempatkan di sie lain, misal masuk ke Dana/DPK/PDD? Atau dipindah ke PKMBK ke NaPas dan sebaliknya?</label>
-                <input type="text" class="form-control" name="sieyangmau" placeholder="Isikan jawaban applicant">
-                </div>
+                
                  <div class="form-group">
                 <label>Apabila anda tidak diterima, apakah anda ingin melayani di PMK?</label>
                 <input type="text" class="form-control" name="melayanipmk" placeholder="Isikan jawaban applicant">

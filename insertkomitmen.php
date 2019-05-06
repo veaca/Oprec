@@ -11,7 +11,8 @@
 	$ekspektasikepanitiaannotes = $_POST['ekspektasinotes'];
 	$bukansiepilihan = $_POST['bukansiepilihan'];
 	$bukansiepilihannotes = $_POST['bukansiepilihannotes'];
-	
+	$relakorban = $_POST['relakorban'];
+	$relakorbannotes = $_POST['relakorbannotes'];
 	$terlibatpelayanan = $_POST['terlibatpelayanan'];
 	$terlibatpelayanannotes = $_POST['terlibatpelayanannotes'];
 	$teskampus = $_POST['teskampus'];
@@ -30,6 +31,8 @@
 					ekspektasinotes = '$ekspektasikepanitiaannotes',
 					bukansiepilihan = '$bukansiepilihan',
 					bukansiepilihannotes = '$bukansiepilihan',
+					relakorban = '$relakorban',
+					relakorbannotes = '$relakorbannotes',
 					terlibatpelayanan = '$terlibatpelayanan',
 					terlibatpelayanannotes = '$terlibatpelayanannotes',
 					teskampus = '$teskampus',

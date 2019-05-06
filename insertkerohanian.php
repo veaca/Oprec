@@ -3,25 +3,31 @@
 	
 	$nrp = $_POST['nrp'];
 	$interviewer = $_POST['interviewer'];
-	$lahirbaru = $_POST['lahirbaru'];
-	$lahirbarunotes = $_POST['lahirbarunotes'];
+	// $lahirbaru = $_POST['lahirbaru'];
+	// $lahirbarunotes = $_POST['lahirbarunotes'];
 	$sate = $_POST['sate'];
 	$satenotes = $_POST['satenotes'];
+	$tanyasate = $_POST['tanyasate'];
+	$tanyasatenotes = $_POST['tanyasatenotes'];
 	$komitsate = $_POST['komitsate'];
 	$komitsatenotes = $_POST['komitsatenotes'];
+	$persekutuan = $_POST['persekutuan'];
+	$persekutuannotes = $_POST['persekutuannotes'];
+	$hiduppersekutuan = $_POST['hiduppersekutuan'];
+	$hiduppersekutuannotes = $_POST['hiduppersekutuannotes'];
 	$kk = $_POST['kk'];
-	$pkk = $_POST['pkk'];
-	$bab8 = $_POST['bab8'];
-	$semuabab8 = $_POST['semuabab8'];
-	$tidakpik = $_POST['tidakpik'];
-	$lanjutkk = $_POST['lanjutkk'];
-	$pkk_kk = $_POST['pkk_kk'];
-	$temankk = $_POST['temankk'];
-	$tambahteman = $_POST['tambahteman'];
-	$ketemukk = $_POST['ketemukk'];
-	$babkk = $_POST['babkk'];
-	$lastkk = $_POST['lastkk'];
-	$kknotes = $_POST['kknotes'];
+	// $pkk = $_POST['pkk'];
+	// $bab8 = $_POST['bab8'];
+	// $semuabab8 = $_POST['semuabab8'];
+	// $tidakpik = $_POST['tidakpik'];
+	// $lanjutkk = $_POST['lanjutkk'];
+	// $pkk_kk = $_POST['pkk_kk'];
+	// $temankk = $_POST['temankk'];
+	// $tambahteman = $_POST['tambahteman'];
+	// $ketemukk = $_POST['ketemukk'];
+	// $babkk = $_POST['babkk'];
+	// $lastkk = $_POST['lastkk'];
+	// $kknotes = $_POST['kknotes'];
 	$bedaagama = $_POST['bedaagama'];
 	$bedaagamanotes = $_POST['bedaagamanotes'];
 	$rokok = $_POST['rokok'];
@@ -30,29 +36,25 @@
 	$bohongnotes = $_POST['bohongnotes'];
 	$pornografi = $_POST['pornografi'];
 	$pornonotes = $_POST['pornonotes'];
-	
+	$promelayani = $_POST['promelayani'];
+	$rendahhati = $_POST['rendahhati'];
+	$rendahhatinotes = $_POST['rendahhatinotes'];
+	$denominasi = $_POST['denominasi'];
+	$denominasinotes = $_POST['denominasinotes'];
 	
 	$query = "UPDATE dataoprec
 				SET interviewerkerohanian = '$interviewer',
-					lahirbaru = '$lahirbaru',
-					lahirbarunotes = '$lahirbarunotes',
 					sate = '$sate',
 					satenotes = '$satenotes',
+					tanyasate = '$tanyasate',
+					tanyasatenotes = '$tanyasatenotes',
 					komitsate = '$komitsate',
 					komitsatenotes = '$komitsatenotes',
+					persekutuan = '$persekutuan',
+					persekutuannotes = '$persekutuannotes',
+					hiduppersekutuan = '$hiduppersekutuan',
+					hiduppersekutuannotes = '$hiduppersekutuannotes',
 					kk = '$kk',
-					pkk = '$pkk',
-					bab8 = '$bab8',
-					semuabab8 = '$semuabab8',
-					tidakpik = '$tidakpik',
-					lanjutkk = '$lanjutkk',
-					pkk_kk = '$pkk_kk',
-					temankk = '$temankk',
-					tambahteman = '$tambahteman',
-					ketemukk = '$ketemukk',
-					babkk = '$babkk',
-					lastkk = '$lastkk',
-					kknotes = '$kknotes',
 					bedaagama = '$bedaagama',
 					bedaagamanotes = '$bedaagamanotes',
 					rokok = '$rokok',
@@ -60,8 +62,14 @@
 					bohong = '$bohong',
 					bohongnotes = '$bohongnotes',
 					pornografi = '$pornografi',
-					pornonotes = '$pornonotes'
-					
+					pornonotes = '$pornonotes',
+					promelayani = '$promelayani',
+					rendahhati = '$rendahhati',
+					rendahhatinotes = '$rendahhatinotes',
+					denominasi = '$denominasi',
+					denominasinotes = '$denominasinotes'
+
+
 					WHERE nrp = '$nrp'";
 	
 	if(mysql_query($query)){

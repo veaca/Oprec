@@ -176,11 +176,11 @@
                 </div> -->
                   
                
-               
+<!--                
                 <div class="form-group">
                     <label>Apakah sudah lahir baru?</label>
                     <div class="radio">
-                    <!-- VALUE SUDAH 0 -->
+
                       <label><input type="radio" required name="lahirbaru" value="0" > Sudah<br></label>
                     </div>
                     <div class="radio">
@@ -193,7 +193,7 @@
                 <div class="form-group">
                   <label>Notes lahir baru</label>
                   <input type="text" class="form-control" name="lahirbarunotes" placeholder="Masukkan catatan bila perlu">
-                </div>  
+                </div>   -->
                 <div class="form-group">
                   <label>Apa itu saat teduh?</label>
                   <div class="radio">
@@ -207,9 +207,24 @@
                     </div>
                 </div> 
 				<div class="form-group">
-                  <label>Bagaimana Kehidupan saat teduhmu?</label>
+                  <label>saat teduh notes</label>
                   <input type="text" class="form-control" name="satenotes" placeholder="Masukkan catatan mengenai saat teduh yang sedang dijalani Applicant.">
                 </div>   
+
+                 <div class="form-group">
+                  <label>Apakah kamu bersedia apabila ditanyakan mengenai kehidupan doa dan satemu?</label>
+                  <div class="radio">
+                      <label><input type="radio" required name="tanyasate" value="3" >Saya siap untuk ditanya dan diingatkan sambil belajar untuk memperbaiki kehidupan doa dan saat teduh saya<br></label>
+                    </div>
+                    <div class="radio">
+                      <label><input type="radio" name="tanyasate" value="1">Saya tidak terlalu nyaman ditanyakan tentang kehidupan rohani saya, karena itu adalah urusan pribadi setiap orang<br></label>
+                    </div>
+                </div> 
+                <div class="form-group">
+                  <label>Notes tanya sate</label>
+                  <input type="text" class="form-control" name="tanyasatenotes" placeholder="Masukkan catatan bila perlu">
+                </div>
+
                 <div class="form-group">
                   <label>Apa kamu berkomitmen memperbaiki saat teduhmu?</label>
                   <div class="radio">
@@ -230,78 +245,61 @@
                   <label>Notes saat teduh</label>
                   <input type="text" class="form-control" name="komitsatenotes" placeholder="Masukkan catatan bila perlu">
                 </div>
+
+                  <div class="form-group">
+                  <label>Bagaimana pandanganmu tentang persekutuan?</label>
+                  <div class="radio">
+                      <label><input type="radio" required name="persekutuan" value="3" >Persekutuan adalah cara untuk saling menopang dan membangun<br></label>
+                    </div>
+                    <div class="radio">
+                      <label><input type="radio" name="persekutuan" value="2">Persekutuan penting karena alkitab yang menyuruh <br></label>
+                    </div>
+					<div class="radio">
+                      <label><input type="radio" name="persekutuan" value="1">Tidak Jelas<br></label>
+                    </div>
+                </div> 
+                <div class="form-group">
+                  <label>Notes persekutuan</label>
+                  <input type="text" class="form-control" name="persekutuannotes" placeholder="Masukkan catatan bila perlu">
+                </div>
+                
+                  <div class="form-group">
+                  <label>Bagaimana kehidupan persekutuan mu baik di PJ/persekutuan lainnya selain ibadah Minggu (ex:CG)</label>
+                  <div class="radio">
+                      <label><input type="radio" required name="hiduppersekutuan" value="3" >Saya aktif PJ atau aktif CG<br></label>
+                    </div>
+                    <div class="radio">
+                      <label><input type="radio" name="hiduppersekutuan" value="2">Saya tidak terlalu aktif PJ atau persekutuan lainnya (alasan akademik <br></label>
+                    </div>
+					<div class="radio">
+                      <label><input type="radio" name="hiduppersekutuan" value="1">Saya jarang PJ atau persekutuan<br></label>
+                    </div>
+                </div> 
+                <div class="form-group">
+                  <label>Notes hidup persekutuan</label>
+                  <input type="text" class="form-control" name="hiduppersekutuannotes" placeholder="Masukkan catatan bila perlu">
+                </div>
+
                 <div class="form-group">
                   <label>Bagaimana kehidupan KKmu?</label>
                   <div class="radio">
-                      <label><input type="radio" required name="kk" value="3" >Aktif dan rutin.<br></label>
+                      <label><input type="radio" required name="kk" value="0" >Aktif dan rutin.<br></label>
                     </div>
                     <div class="radio">
-                      <label><input type="radio" name="kk" value="2">Tidak aktif dan tidak jelas.(tantang mau KK lanjut KK tidak)<br></label>
+                      <label><input type="radio" name="kk" value="0">Tidak aktif dan tidak jelas.(tantang mau KK lanjut KK tidak)<br></label>
                     </div>
                     <div class="radio">
-                      <label><input type="radio" name="kk" value="1">Bubar.(tantang mau KK lanjut KK tidak)<br></label>
+                      <label><input type="radio" name="kk" value="0">Bubar.(tantang mau KK lanjut KK tidak)<br></label>
                     </div>
                 </div>  
-                <div class="form-group">
-                  <label>Siapa PKKmu saat PIK?</label>
-                  <input type="text" required class="form-control" name="pkk" placeholder="Nama PKK.">
-                </div>
-                <div class="form-group">
-                  <label>Apakah selesai sampai bab 8?</label>
-                  <input type="text" required class="form-control" name="bab8" placeholder="Selesai sampai bab 8? ">
-                </div>
-                <div class="form-group">
-                  <label>Apakah semua kelompok PIKmu selesai sampai bab 8?</label>
-                  <input type="text" required class="form-control" name="semuabab8" placeholder=" Apakah semua selesai sampai bab 8?">
-                </div>
-                <div class="form-group">
-                  <label>Apakah ada temanmu yg tidak mengikuti PIK? Siapa dan Tambahkan alasan!</label>
-                  <input type="text" required class="form-control" name="tidakpik" placeholder="AKK yang tidak ikut PIK">
-                </div>
-                <div class="form-group">
-                    <label>Apakah kamu lanjut KK?</label>
-                    <div class="radio">
-                      <label><input type="radio" required name="lanjutkk" value="Ya" > Ya<br></label>
-                    </div>
-                    <div class="radio">
-                      <label><input type="radio" name="lanjutkk" value="Tidak"> Tidak<br></label>
-                    </div>
-                </div>   
-                <div class="form-group">
-                  <label>Siapa PKKmu saat KK?</label>
-                  <input type="text" class="form-control" name="pkk_kk" placeholder="Nama PKK saat KK">
-                </div>
-                <div class="form-group">
-                  <label>Sebutkan teman satu KKmu</label>
-                  <input type="text" class="form-control" name="temankk" placeholder="Teman KK">
-                </div>
-                <div class="form-group">
-                  <label>Apakah ada pengurangan / penambahan anggota di kelompokmu?</label>
-                  <input type="text" class="form-control" name="tambahteman" placeholder="Tambah / kurang teman KK">
-                </div>
-                <div class="form-group">
-                  <label>Sudah mulai KK? Udah ketemu KK berapa kali? (Kumpul dihitung, tidak harus tentang materi)</label>
-                  <input type="text" class="form-control" name="ketemukk" placeholder="Ketemu KK setelah PIK">
-                </div>
-                <div class="form-group">
-                  <label>Materi KK sampai BAB berapa?</label>
-                  <input type="text" class="form-control" name="babkk" placeholder="BAB KK">
-                </div>
-                <div class="form-group">
-                  <label>Kapan terakhir KK?</label>
-                  <input type="text" class="form-control" name="lastkk" placeholder="Terakhir KK">
-                </div>
-                <div class="form-group">
-                  <label>Notes KK</label>
-                  <input type="text" class="form-control" name="kknotes" placeholder="Masukkan catatan mengenai KK bila perlu">
-                </div>
+               
                 <div class="form-group">
                     <label>Apa pendapatmu mengenai pacaran beda agama?</label>
                     <div class="radio">
-                      <label><input type="radio" required name="bedaagama" value="1" > Boleh<br></label>
+                      <label><input type="radio" required name="bedaagama" value="0" > Boleh<br></label>
                     </div>
                     <div class="radio">
-                      <label><input type="radio" name="bedaagama" value="3"> Tidak boleh<br></label>
+                      <label><input type="radio" name="bedaagama" value="1"> Tidak boleh<br></label>
                     </div>
                 </div>   
                 <div class="form-group">
@@ -311,10 +309,10 @@
                   <div class="form-group">
                     <label>Apa pendapatmu mengenai rokok/electric/sisha/dsb?</label>
                     <div class="radio">
-                      <label><input type="radio" required name="rokok" value="1" > Boleh.<br></label>
+                      <label><input type="radio" required name="rokok" value="0" > Boleh.<br></label>
                     </div>
                     <div class="radio">
-                      <label><input type="radio" name="rokok" value="3"> Tidak boleh.<br></label>
+                      <label><input type="radio" name="rokok" value="1"> Tidak boleh.<br></label>
                     </div>
                 </div>   
                 <div class="form-group">
@@ -324,10 +322,10 @@
                   <div class="form-group">
                     <label>Apa pendapatmu mengenai bohong putih/bohong demi kebaikan?</label>
                     <div class="radio">
-                      <label><input type="radio" required name="bohong" value="1" > Boleh .<br></label>
+                      <label><input type="radio" required name="bohong" value="0" > Boleh .<br></label>
                     </div>
                     <div class="radio">
-                      <label><input type="radio" name="bohong" value="3"> Tidak boleh. <br></label>
+                      <label><input type="radio" name="bohong" value="1"> Tidak boleh. <br></label>
                     </div>
                 </div>   
                 <div class="form-group">
@@ -337,16 +335,62 @@
                   <div class="form-group">
                     <label>Apa pendapatmu mengenai kewajaran dalam pornografi?</label>
                     <div class="radio">
-                      <label><input type="radio" required name="pornografi" value="1"> Boleh. <br></label>
+                      <label><input type="radio" required name="pornografi" value="0"> Boleh. <br></label>
                     </div>
                     <div class="radio">
-                      <label><input type="radio" name="pornografi" value="3"> Tidak boleh. <br></label>
+                      <label><input type="radio" name="pornografi" value="1"> Tidak boleh. <br></label>
                     </div>
                 </div>   
                 <div class="form-group">
                   <label>Notes Kewajaran Pornografi</label>
                   <input type="text" class="form-control" name="pornonotes" placeholder="Masukkan penjelasan Applicant mengenai kewajaran pornografi">
                 </div>
+
+                <div class="form-group">
+                  <label>Peserta MEMILIH dari ketiga jawaban tsb. Sehingga pertanyaan dan jawaban DIBACAKAN</label>
+                  <label>Bagaimana pernyataan yang menunjukkan pelayanan?</label>
+                  <div class="radio">
+                    <label><input type="radio" name="promelayani" value="2">Pelayanan dengan hati itu melakukan yang terbaik apapun hasilnya.<br></label>
+                  </div>
+                  <div class="radio">
+                    <label><input type="radio" required name="promelayani" value="3" >Pelayanan dengan hati itu selalu mengupayakan hasil yang terbaik<br></label>
+                  </div>
+					        <div class="radio">
+                    <label><input type="radio" name="promelayani" value="1">Pelayanan itu yang penting hati, selama kamu ada hati di sana kamu bisa melakukan yang baik<br></label>
+                  </div>
+                </div> 
+                
+                <div class="form-group">
+                  <label>Semisal kamu sudah melakukan tugas mu sebaik mungkin namun ternyata banyak orang yang meremehkan tugasmu dan kemudian mengkritik pekerjaanmu, bahkan dengan bahasa yang tajam bagaimana responmu?</label>
+                  <div class="radio">
+                      <label><input type="radio" required name="rendahhati" value="5" >Saya berusaha mengambil positif dan membuang negatifnya, menerima dengan lapang dada, saya melakukannya untuk Tuhan<br></label>
+                    </div>
+                    <div class="radio">
+                      <label><input type="radio" name="rendahhati" value="3">Tidak akan saya hiraukan, Saya tidak peduli, Mungkin saya cuek dan saya tetap melakukan apa yang saya anggap benar.<br></label>
+                    </div>
+					          <div class="radio">
+                      <label><input type="radio" name="rendahhati" value="1">Kemungkinan saya akan marah dan berurusan dengan orang itu<br></label>
+                    </div>
+                </div> 
+                <div class="form-group">
+                  <label>Notes rendah hati melayani</label>
+                  <input type="text" class="form-control" name="rendahhatinotes" placeholder="Masukkan catatan bila perlu">
+                </div>
+
+                <div class="form-group">
+                  <label>Semisal dalam kepanitiaan dilakukan pujian dan penyembahan yang tidak sesuai dengan tata gerejamu, apakah kamu bersedia mengikutinya?</label>
+                  <div class="radio">
+                      <label><input type="radio" required name="denominasi" value="3" >Ya, saya bersedia mengikutinya selama tidak bertentangan dengan firman Tuhan<br></label>
+                    </div>
+                    <div class="radio">
+                      <label><input type="radio" name="denominasi" value="1">Tidak, saya lebih baik tidak mengikutinya, karena saya menganggap tata gereja saya yang paling benar<br></label>
+                    </div>
+                </div> 
+                <div class="form-group">
+                  <label>Notes denominasi</label>
+                  <input type="text" class="form-control" name="denominasinotes" placeholder="Masukkan catatan bila perlu">
+                </div>
+
               </div>
               <!-- /.box-body -->
 
